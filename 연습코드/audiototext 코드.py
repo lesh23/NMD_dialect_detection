@@ -7,7 +7,7 @@ from pydub.silence import split_on_silence
 
 # wav 파일을 열어서 청크 자르기
 r = sr.Recognizer()
-sound_file = AudioSegment.from_wav(r'C:\Users\Kukhwan Yu\Desktop\승현이꺼\final\data\jeon1\DJDD20000001.wav')
+sound_file = AudioSegment.from_wav(r'wavfile.wav')
 audio_chunks = split_on_silence(sound_file, 
     min_silence_len=500,
     silence_thresh=-40
